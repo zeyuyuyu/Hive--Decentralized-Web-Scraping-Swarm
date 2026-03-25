@@ -3,118 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hive - Join the Web Scraping Revolution!</title>
+    <title>Hive - Web Scraping Made Fun!</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body class="bg-gray-900 text-white">
-    <div class="container mx-auto px-4">
-        <!-- Hero Section with Gamification Stats -->
-        <div class="flex justify-between items-center py-6">
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">🐝 Hive</h1>
             <div class="flex items-center space-x-4">
                 <div class="relative">
-                    <img src="https://api.dicebear.com/6.x/avatars/svg?seed=user123" class="w-12 h-12 rounded-full border-2 border-yellow-400">
-                    <span class="absolute -top-1 -right-1 bg-green-500 rounded-full w-4 h-4"></span>
+                    <span class="absolute -top-2 -right-2 bg-yellow-500 rounded-full px-2 py-1 text-xs animate__animated animate__bounce animate__infinite">+25</span>
+                    <img src="https://api.dicebear.com/6.x/adventurer/svg?seed=Felix" class="w-10 h-10 rounded-full border-2 border-yellow-500">
                 </div>
-                <div>
-                    <h3 class="font-bold">Level 7 Scraper</h3>
-                    <div class="flex items-center">
-                        <div class="w-48 h-2 bg-gray-700 rounded-full">
-                            <div class="w-3/4 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
-                        </div>
-                        <span class="ml-2 text-sm">75%</span>
+                <div class="text-sm">
+                    <p class="font-bold">Level 8 Worker Bee</p>
+                    <div class="bg-gray-700 rounded-full h-2 w-32">
+                        <div class="bg-yellow-500 rounded-full h-2 w-3/4 animate__animated animate__pulse animate__infinite"></div>
                     </div>
                 </div>
             </div>
-            <div class="flex space-x-4">
-                <div class="text-center">
-                    <span class="block text-2xl font-bold text-yellow-400">127</span>
-                    <span class="text-sm">Hive Points</span>
-                </div>
-                <div class="text-center">
-                    <span class="block text-2xl font-bold text-blue-400">12</span>
-                    <span class="text-sm">Datasets</span>
-                </div>
-            </div>
         </div>
+    </nav>
 
-        <!-- Main Dashboard -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-            <div class="bg-gray-800 p-6 rounded-lg">
-                <h2 class="text-xl font-bold mb-4">🔥 Trending Scrapes</h2>
+    <main class="container mx-auto p-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Main Scraping Interface -->
+            <div class="md:col-span-2 bg-gray-800 p-6 rounded-lg">
+                <h2 class="text-xl font-bold mb-4">Start Scraping</h2>
                 <div class="space-y-4">
-                    <div class="flex items-center justify-between p-3 bg-gray-700 rounded hover:bg-gray-600 cursor-pointer">
-                        <div>
-                            <h4 class="font-medium">Amazon Price Tracker</h4>
-                            <p class="text-sm text-gray-400">By @DataWizard</p>
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <span class="text-sm">2.3k uses</span>
-                            <button class="px-3 py-1 bg-blue-500 rounded-full text-sm hover:bg-blue-600">Fork</button>
-                        </div>
-                    </div>
-                    <!-- More trending scrapes... -->
+                    <input type="url" placeholder="Enter URL to scrape..." class="w-full p-3 bg-gray-700 rounded-lg focus:ring-2 focus:ring-yellow-500 outline-none">
+                    <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-black font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105">
+                        🚀 Launch Swarm
+                    </button>
                 </div>
             </div>
 
+            <!-- Achievements & Rewards Panel -->
             <div class="bg-gray-800 p-6 rounded-lg">
-                <h2 class="text-xl font-bold mb-4">🏆 Leaderboard</h2>
+                <h2 class="text-xl font-bold mb-4">Your Hive Stats 🏆</h2>
                 <div class="space-y-4">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-center space-x-3">
-                            <span class="text-yellow-400 font-bold">1</span>
-                            <img src="https://api.dicebear.com/6.x/avatars/svg?seed=top1" class="w-8 h-8 rounded-full">
-                            <span>DataNinja</span>
-                        </div>
-                        <span class="text-yellow-400">5,432 pts</span>
+                    <div class="flex justify-between items-center">
+                        <span>Pages Scraped</span>
+                        <span class="text-yellow-500 font-bold">1,337</span>
                     </div>
-                    <!-- More leaderboard entries... -->
+                    <div class="flex justify-between items-center">
+                        <span>Hive Power</span>
+                        <span class="text-yellow-500 font-bold">4.2k</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span>Global Rank</span>
+                        <span class="text-yellow-500 font-bold">#42</span>
+                    </div>
+                </div>
+
+                <!-- NFT Badges -->
+                <div class="mt-6">
+                    <h3 class="font-bold mb-3">Your Badges</h3>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div class="relative group">
+                            <img src="https://api.dicebear.com/6.x/shapes/svg?seed=speed" class="w-full rounded-lg hover:scale-110 transition-all cursor-pointer">
+                            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 p-1 text-xs text-center rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity">Speed Demon</div>
+                        </div>
+                        <div class="relative group">
+                            <img src="https://api.dicebear.com/6.x/shapes/svg?seed=accurate" class="w-full rounded-lg hover:scale-110 transition-all cursor-pointer">
+                            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 p-1 text-xs text-center rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity">Data Master</div>
+                        </div>
+                        <div class="relative group">
+                            <img src="https://api.dicebear.com/6.x/shapes/svg?seed=pioneer" class="w-full rounded-lg hover:scale-110 transition-all cursor-pointer">
+                            <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-75 p-1 text-xs text-center rounded-b-lg opacity-0 group-hover:opacity-100 transition-opacity">Early Bee</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <!-- Achievement Popup -->
-        <div class="fixed bottom-5 right-5 bg-green-500 p-4 rounded-lg shadow-lg animate__animated animate__fadeInUp">
-            <div class="flex items-center space-x-3">
-                <div class="bg-green-600 p-2 rounded-full">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                    </svg>
+        <!-- Global Leaderboard -->
+        <div class="mt-6 bg-gray-800 p-6 rounded-lg">
+            <h2 class="text-xl font-bold mb-4">Global Leaderboard 🌍</h2>
+            <div class="space-y-4">
+                <div class="flex items-center justify-between p-3 bg-gray-700 rounded-lg animate__animated animate__fadeIn">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-yellow-500 font-bold">#1</span>
+                        <img src="https://api.dicebear.com/6.x/adventurer/svg?seed=John" class="w-8 h-8 rounded-full">
+                        <span>DataKing</span>
+                    </div>
+                    <span class="text-yellow-500 font-bold">12.5k HP</span>
                 </div>
-                <div>
-                    <h4 class="font-bold">Achievement Unlocked!</h4>
-                    <p class="text-sm">First Dataset Shared 🎉</p>
-                </div>
+                <!-- More leaderboard entries... -->
             </div>
         </div>
+    </main>
 
-        <!-- Social Share Modal -->
-        <div class="fixed inset-0 bg-black bg-opacity-50 hidden" id="shareModal">
-            <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-800 p-6 rounded-lg w-96">
-                <h3 class="text-xl font-bold mb-4">Share Your Achievement</h3>
-                <p class="mb-4">I just scraped 1000+ products using Hive! Join the data revolution 🐝</p>
-                <div class="flex space-x-4">
-                    <button class="flex-1 bg-blue-500 py-2 rounded hover:bg-blue-600">Twitter</button>
-                    <button class="flex-1 bg-green-500 py-2 rounded hover:bg-green-600">WhatsApp</button>
-                    <button class="flex-1 bg-blue-600 py-2 rounded hover:bg-blue-700">LinkedIn</button>
-                </div>
+    <!-- Achievement Popup -->
+    <div class="fixed bottom-4 right-4 bg-yellow-500 text-black p-4 rounded-lg shadow-lg animate__animated animate__fadeInUp">
+        <div class="flex items-center space-x-3">
+            <img src="https://api.dicebear.com/6.x/shapes/svg?seed=new" class="w-12 h-12">
+            <div>
+                <p class="font-bold">New Achievement!</p>
+                <p class="text-sm">"Speed Demon" - Scraped 100 pages in 1 minute</p>
             </div>
         </div>
     </div>
-
-    <script>
-        // Gamification logic would go here
-        function showAchievement() {
-            // Show achievement popup
-        }
-
-        function levelUp() {
-            // Handle level up animation and rewards
-        }
-
-        function shareProgress() {
-            // Open share modal
-        }
-    </script>
 </body>
 </html>
